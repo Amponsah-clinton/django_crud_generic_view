@@ -1,0 +1,16 @@
+
+
+<div class="container">
+  
+    {% for person in persons %}
+    <li><a href="{% url 'detail_view' person.pk %}"> {{person.name}} </a></li><br/>
+   
+    {% empty %}
+    <h2>Empty</h2>
+
+
+    {% endfor %}
+
+  
+
+</div>
